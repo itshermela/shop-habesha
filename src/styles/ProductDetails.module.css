@@ -1,0 +1,40 @@
+.title {
+    font-weight: 600;
+}
+.container {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 15px;
+}
+.link {
+    color: #E24E1B;
+    text-decoration: none;
+}
+.link:hover {
+    color: #9b2b06;
+}
+.button {
+    margin-top: 20px;
+}
+.button button{
+    width: '60px';
+    background-color: #E24E1B;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #E24E1B;
+}
+.button button:hover {
+    background-color: white;
+    color: #E24E1B;
+    cursor: pointer;
+    border: 1px solid #E24E1B;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
