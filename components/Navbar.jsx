@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useSelector } from 'react-redux'
-import {CiSearch} from 'react-icons/ci'
 import {CgShoppingCart} from 'react-icons/cg'
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
@@ -25,14 +24,9 @@ const Navbar = () => {
           <Link href='/male'><li>Male</li></Link>
           <Link href='/kids'><li>Kids</li></Link>
           <Link href='/wedding'><li>Wedding</li></Link>
+          <Link href='/family'><li>Family</li></Link>
           <Link href='/products'><li>All Products</li></Link>
         </ul>
-        <div className='search-bar'>
-          <CiSearch />
-          <input 
-          type='text' 
-          placeholder='What you looking for'/>
-        </div>
         {showCart ?
         <Link href='/cart'>
           <button className='cart' onClick={() => setShowCart(false)}>   
@@ -65,6 +59,7 @@ const Navbar = () => {
                 <Link href='/male'><li>Male</li></Link>
                 <Link href='/kids'><li>Kids</li></Link>
                 <Link href='/wedding'><li>Wedding</li></Link>
+                <Link href='/family'><li>Family</li></Link>
                 <Link href='/products'><li>All Products</li></Link>
               </ul>
             </div>

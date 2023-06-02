@@ -13,7 +13,6 @@ const Shop = ({ products }) => {
                 {products.map((product) => (
                     <ProductCard
                     product={product}
-                    key={product.id}
                     id={product.id}
                     url={product.image_url}
                     name={product.name}

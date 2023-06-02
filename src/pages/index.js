@@ -5,6 +5,7 @@ import { Navigation, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Product } from '../../components/Product'
 import ProductSample from '../../components/ProductSample'
+import Newsletter from '../../components/Newsletter'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -84,6 +85,7 @@ const HomePage = ({products}) => {
         </Swiper>
       </div>
       <ProductSample />
+      <Newsletter />
     </>
   )
 }
