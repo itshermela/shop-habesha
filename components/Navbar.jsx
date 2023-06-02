@@ -5,10 +5,9 @@ import { useSelector } from 'react-redux'
 import {CiSearch} from 'react-icons/ci'
 import {CgShoppingCart} from 'react-icons/cg'
 import {RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import { useStateContext } from '../context/StateContext'
 
 const Navbar = () => {
-    const {showCart, setShowCart} = useStateContext()
+    const [showCart, setShowCart] = useState(false)
     const [toggleMenu, setToggleMenu] = useState(false)
     const cart = useSelector((state) => state.cart)
     const sumOfCartItems = () => {
