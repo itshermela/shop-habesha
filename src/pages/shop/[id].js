@@ -1,38 +1,57 @@
+import React from 'react'
 import { XataClient } from '../../../src/xata'
-import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../../styles/ProductDetails.module.css'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../../redux/cartSlice'
+import {CgShoppingCart} from 'react-icons/cg'
 
 const ProductDetails = ({ item }) => {
     const dispatch = useDispatch()
     return (
-    <div className={styles.wrapper}>
-    <Link legacyBehavior href="/shop">
-    <a className={styles.link}>Go to shop</a>
-    </Link>
-    <div className={styles.container}>
-    <Image
-        src={item.image_url}
-        width={400}
-        height={450}
-    />
-    <div className={styles.details}>
-        <p><span className={styles.title}>Name: </span>{item.name}</p>
-        <p><span className={styles.title}>Description: </span>{item.description}</p>
-        <p className={styles.price}><span className={styles.title}>Price: </span>${item.price}</p>
-        <p className={styles.category}><span className={styles.title}>Category: </span>{item.category.name}</p>
-        <div className={styles.button}>
-        <button
-        onClick={() => dispatch(addToCart(item))}
-        >
-        Add to cart
-        </button>
+        <div className='products'>
+            <div className='product-detail-container'>
+                <div className='product-images'>
+                    <div className='big-image-container'>
+                        <Image
+                            className='big-image'
+                            src={item.image_url}
+                            width={400}
+                            height={450}
+                        />
+                    </div>
+                </div>
+
+                <div className='product-details'>
+                    <div className='name-and-category'>
+                        <h3>{item.name}</h3>
+                        <span>{item.category.name}</span> 
+                        <h4>{item.description}</h4>   
+                    </div>
+                       
+                    <div className='add-to-cart'>
+                        <button className='btn' type='button'
+                            onClick={() => dispatch(addToCart(item))}
+                        >
+                            <CgShoppingCart size={20} />Add to cart
+                        </button>
+                        <p className='price'>${item.price}.00</p>  
+                    </div>
+                </div>
+            </div>
+
+            <div className='product-desc-container'>
+                <div className='desc-title'>
+                    <div className="desc-background">
+                        Overview
+                    </div>
+                    <h2>Product Information</h2>  
+                </div>
+                <div className='desc-details'>
+                    <h4>PRODUCT DETAILS</h4>
+                    <p>{item.product_detail}</p>  
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
     )
 }
 const xata = new XataClient()
@@ -45,4 +64,5 @@ export const getServerSideProps = async(context) => {
     }
     }
 }
+
 export default ProductDetails
