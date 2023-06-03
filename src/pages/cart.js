@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 'react-icons/ai'
 import {HiOutlineTrash} from 'react-icons/hi'
 import { incrementQuantity, decrementQuantity, removeFromCart } from '../../redux/cartSlice'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Cart = () => {
   const cartList = useSelector((state) => state.cart)
@@ -65,13 +66,16 @@ const Cart = () => {
                 <span>${totalPrice()}</span>
               </div>
               <div>
-                <button className='btn' type='button' >Process to Checkout</button>
+                <Link href={'/success'}>
+                  <button className='btn' type='button'>Process to Checkout</button>
+                </Link>
               </div>         
             </div>
         )}  
       </div>
-  </div>
+    </div>
   )
 }
+
 
 export default Cart

@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { toast } from 'react-hot-toast'
 
 const initialState = {
     cart: []
@@ -17,6 +18,7 @@ export const cartSlice = createSlice({
         ...action.payload, quantity: 1
     })
     }
+    toast.success(`added to the cart.`);
     },
     incrementQuantity: (state, action) => {
     const product = state.cart?.find((item) => item.id === action.payload.id)
@@ -44,5 +46,6 @@ export const {
     incrementQuantity,
     decrementQuantity
 } = cartSlice.actions
+
 
 export default cartSlice.reducer
