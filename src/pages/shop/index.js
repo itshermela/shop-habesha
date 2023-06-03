@@ -12,12 +12,13 @@ const Shop = ({ products }) => {
             <div className={styles.container}>
                 {products.map((product) => (
                     <ProductCard
-                    product={product}
-                    id={product.id}
-                    url={product.image_url}
-                    name={product.name}
-                    price={product.price}
-                    categoryName={product.category.name}pro
+                        key={product.id}
+                        product={product}
+                        id={product.id}
+                        url={product.image_url}
+                        name={product.name}
+                        price={product.price}
+                        categoryName={product.category.name}pro
                     />
                 ))}
             </div>

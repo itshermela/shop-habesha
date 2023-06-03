@@ -17,6 +17,7 @@ const ProductDetails = ({ item }) => {
                             src={item.image_url}
                             width={400}
                             height={450}
+                            alt='image'
                         />
                     </div>
                 </div>

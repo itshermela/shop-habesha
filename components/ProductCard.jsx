@@ -12,6 +12,7 @@ export const ProductCard = ({url, id, name, price, categoryName, product}) => {
                 src={url}
                 width={320}
                 height={300}
+                alt='product card'
             />
             <h4 className={styles.name}>{name}</h4>
             <h5 className={styles.price}>${price}</h5>

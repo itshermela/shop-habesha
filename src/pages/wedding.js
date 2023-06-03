@@ -7,6 +7,7 @@ const wedding = ({AllweddingProducts}) => {
         <div className='Allproducts-container'>
             {AllweddingProducts?.map(product => (
                 <Allproducts 
+                    key={product.id}
                     id={product.id}
                     url={product.image_url}
                     name={product.name}

@@ -11,6 +11,7 @@ const Allproducts = ({url, id, name, price, categoryName}) => {
                   src={url}
                   width={320}
                   height={300}
+                  alt='Products'
               />
               <p className='Allproduct-name'>{name}</p>
               <p className='Allproduct-tags'>{categoryName}</p>

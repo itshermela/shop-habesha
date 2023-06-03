@@ -32,7 +32,8 @@ const Cart = () => {
                 <Image 
                     src={item.image_url} 
                     width={400}
-                    height={450} />
+                    height={450}
+                    alt='cart' />
               </div>
               <div className='item-details'>
                 <div className='name-and-remove'>

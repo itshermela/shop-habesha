@@ -10,6 +10,7 @@ export const Product = ({url, id, name, price}) => {
                         src={url}
                         width={320}
                         height={300}
+                        alt='product'
                     />
                     <h4 className='product-name'>{name}</h4>
                     <h5 className='product-price'>${price}</h5>

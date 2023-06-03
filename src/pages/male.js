@@ -6,7 +6,8 @@ const male = ({AllmaleProducts}) => {
     return (
         <div className='Allproducts-container'>
             {AllmaleProducts?.map(product => (
-                <Allproducts 
+                <Allproducts
+                    key={product.id}
                     id={product.id}
                     url={product.image_url}
                     name={product.name}

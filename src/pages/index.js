@@ -74,6 +74,7 @@ const HomePage = ({products}) => {
             {products?.map(product => (
               <SwiperSlide>
                 <Product 
+                  key={product.id}
                   id={product.id}
                   url={product.image_url}
                   name={product.name}
