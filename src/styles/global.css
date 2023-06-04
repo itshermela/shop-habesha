@@ -466,6 +466,7 @@ nav input {
 }
 .order-summary .btn {
   width: 100%;
+  margin: 9px;
 }
 .empty-cart {
   display: flex;
