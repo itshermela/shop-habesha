@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shop Habesha
 
-## Getting Started
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/5950165e-341b-4010-bafb-7c05939ca102)
 
-First, run the development server:
+# About
 
-```bash
+# Participants
+GitHub- @itshermela
+
+# Description
+
+Habesha clothing e-commerce web site built using Next.JS, Xata, Cloudinary, CSS modules, Redux Toolkit and Redux Persist for state management. It includes products screen, cart, and checkout.
+
+# Preview
+
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/77046529-ba90-400c-8e55-c4ba78af50dc)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/8df6f6f7-105e-4554-bb63-66acdd214162)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/69d5e3bf-b697-4385-9c28-4cd53e8341ba)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/b1553219-0119-4513-9936-a647f4433afe)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/261692e6-be31-4bfb-8f72-e14e9bcc33e1)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/d237a669-9731-49f6-9adc-260320847aa4)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/a69b47db-f327-416b-8985-7d0ade5e3507)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/1aa6ce05-2e5c-4479-a6b9-ad13c6835ba3)
+![image](https://github.com/itshermela/shop-habesha/assets/57627375/7d012f1a-e946-43f3-8d9d-ec608920b9cc)
+
+# Set Up Project
+
+# Prerequisites
+Before you start with the tutorial make sure you have:
+
+- Node.js
+
+# Install Project
+Clone the repo:
+git clone https://github.com/itshermela/shop-habesha.git
+Install dependecies:
+npm
+Start the server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
